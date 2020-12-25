@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <%= render Layout::Navbar::Component.new %>
+    <%= render Layout::Navbar::Component.new(user: current_user) %>
     <%= render Utils::Alert::Component.new(message: notice, type: 'success') if notice %>
     <%= render Utils::Alert::Component.new(message: alert, type: 'warning') if alert %>
     <main class="my-5">
