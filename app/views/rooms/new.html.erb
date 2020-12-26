@@ -1,0 +1,20 @@
+<section class="rooms">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 col-md-6">
+        <div class="card p-4 shadow">
+          <h3>Nova sala</h3>
+          <%= form_with model: @room do |f| %>
+            <div class="form-group">
+              <%= f.label :name, 'Nome da sala' %>
+              <%= f.text_field :name, placeholder: 'Ex: Sala de reuniões', class: 'form-control' %>
+            </div>
+            <div class="form-group">
+              <%= f.submit 'Salvar', class: 'btn btn-success btn-block font-weight-bold' %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -12,6 +12,6 @@ Rails.application.routes.draw do
       registration: 'cadastro',
       sign_up: 'cadastrar'
     }
-  
+  resources :rooms
   root to: 'pages#home'
 end

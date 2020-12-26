@@ -49,8 +49,7 @@ RSpec.configure do |config|
 
   config.fixture_path = "#{::Rails.root}/spec/factories"
 
-  config.include Devise::Test::ControllerHelpers, type: :controller
-  config.include Devise::Test::ControllerHelpers, type: :view
+  config.include Devise::Test::IntegrationHelpers
   config.include Warden::Test::Helpers
 
   config.before(:suite) do
