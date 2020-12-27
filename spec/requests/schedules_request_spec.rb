@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe "Pages", type: :request do
+RSpec.describe "Schedules", type: :request do
 
-  describe "GET /" do
+  describe "GET /index" do
     it "returns http success" do
-      get root_path
+      get "/schedules/index"
       expect(response).to have_http_status(:success)
     end
   end

@@ -1,0 +1,9 @@
+<%= form_with model: @room do |f| %>
+  <div class="form-group">
+    <%= f.label :name, 'Nome da sala' %>
+    <%= f.text_field :name, placeholder: 'Ex: Sala de reuniões', class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.submit 'Salvar', class: 'btn btn-success btn-block font-weight-bold' %>
+  </div>
+<% end %>

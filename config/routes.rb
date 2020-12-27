@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'schedules/index'
   devise_for :users, controllers: {
     sessions: 'users/sessions',
     registrations: 'users/registrations'
@@ -12,6 +13,7 @@ Rails.application.routes.draw do
       registration: 'cadastro',
       sign_up: 'cadastrar'
     }
-  
+  resources :rooms
+  resources :schedules
   root to: 'pages#home'
 end
