@@ -23,6 +23,8 @@ gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'view_component', '~> 2.22', '>= 2.22.1', require: 'view_component/engine'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+# will_paginate provides a simple API for performing paginated queries with Active Record, DataMapper and Sequel, and includes helpers for rendering pagination links in Rails, Sinatra, Hanami, and Merb web apps.
+gem 'will_paginate', '~> 3.3'
 
 group :development, :test do
   # Great Ruby dubugging companion: pretty print Ruby objects to visualize their structure. Supports custom object formatting via plugins
@@ -33,8 +35,8 @@ group :development, :test do
   gem 'pry-rails', '~> 0.3.9'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-
-  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+  # Faker, a port of Data::Faker from Perl, is used to easily generate fake data: names, addresses, phone numbers, etc.
+  gem 'faker', '~> 2.15', '>= 2.15.1'
 end
 
 group :development do
