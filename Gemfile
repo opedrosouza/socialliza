@@ -25,6 +25,7 @@ gem 'view_component', '~> 2.22', '>= 2.22.1', require: 'view_component/engine'
 gem 'bootsnap', '>= 1.4.2', require: false
 # will_paginate provides a simple API for performing paginated queries with Active Record, DataMapper and Sequel, and includes helpers for rendering pagination links in Rails, Sinatra, Hanami, and Merb web apps.
 gem 'will_paginate', '~> 3.3'
+gem 'will_paginate-bootstrap4'
 
 group :development, :test do
   # Great Ruby dubugging companion: pretty print Ruby objects to visualize their structure. Supports custom object formatting via plugins
