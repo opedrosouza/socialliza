@@ -22,7 +22,7 @@ gem 'devise', '~> 4.7', '>= 4.7.3'
 # View components for Rails
 gem 'view_component', '~> 2.22', '>= 2.22.1', require: 'view_component/engine'
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.4.2', require: false
+gem 'bootsnap', '>= 1.4.2'
 # will_paginate provides a simple API for performing paginated queries with Active Record, DataMapper and Sequel, and includes helpers for rendering pagination links in Rails, Sinatra, Hanami, and Merb web apps.
 gem 'will_paginate', '~> 3.3'
 gem 'will_paginate-bootstrap4'
