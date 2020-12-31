@@ -30,6 +30,7 @@ gem 'will_paginate-bootstrap4'
 gem 'awesome_print', '~> 1.8'
 
 group :development, :test do
+  gem 'simplecov', require: false
   # Autoload dotenv in Rails.
   gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
   # Use Pry as your rails console
