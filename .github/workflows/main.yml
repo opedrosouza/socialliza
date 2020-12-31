@@ -22,8 +22,8 @@ jobs:
         image: postgres
         ports: ['5432:5432']
         env:
-          POSTGRES_PASSWORD: 123123
-          POSTGRES_USER: pedro
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_USER: postgres
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
@@ -49,8 +49,8 @@ jobs:
     - name: Build and run tests
       env:
         DATABASE_URL: postgres://postgres:@localhost:5432/socialliza_test
-        DATABASE_USER: pedro
-        DATABASE_PASSWORD: 123123
+        DATABASE_USER: postgres
+        DATABASE_PASSWORD: postgres
         REDIS_URL: redis://localhost:6379/0
         RAILS_ENV: test
         RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
